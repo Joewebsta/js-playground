@@ -1,19 +1,47 @@
 'use strict';
 
-// 2 *****************
+// 3 *****************
+
+var speak = function(sayWhat) {
+    console.log(sayWhat);
+};
 
 var Dog = function() {
     var name, breed;
-    console.dir(this);
 };
 
-var firstDog = new Dog;
-    firstDog.name = 'Molly';
-    firstDog.breed = 'Pitbull';
+var Cat = function() {
+    var name, breed;
+};
 
-var secondDog = new Dog;
-    secondDog.name = "Max";
-    secondDog.breed = "Husky";
+Dog.prototype.speak = speak;
+Cat.prototype.speak = speak;
+
+var firstDog = new Dog();
+firstDog.name = 'Molly';
+firstDog.breed = 'Pitbull';
+firstDog.speak('woof');
+
+var firstCat = new Dog();
+firstCat.name = 'Rue';
+firstCat.breed = 'Manx';
+firstCat.speak('meow');
+
+
+// 2 *****************
+
+// var Dog = function() {
+//     var name, breed;
+//     console.dir(this);
+// };
+
+// var firstDog = new Dog();
+// firstDog.name = 'Molly';
+// firstDog.breed = 'Pitbull';
+
+// var secondDog = new Dog();
+// secondDog.name = 'Max';
+// secondDog.breed = 'Husky';
 
 
 // 1 *****************
