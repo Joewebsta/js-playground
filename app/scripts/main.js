@@ -1,34 +1,52 @@
 'use strict';
 
-// 3 *****************
+// 4 **********************************
 
 var speak = function(sayWhat) {
     console.log(sayWhat);
+
+    // console.log(this.normal);
+    // console.log(this.love);
+    
 };
 
-var Dog = function() {
-    var name, breed;
+var saySomething = {
+    normal : 'meow',
+    love : 'purr'
 };
 
-var Cat = function() {
-    var name, breed;
-};
+// speak.call(saySomething, saySomething.normal);
+speak.apply(saySomething, ['meoff']);
 
-Dog.prototype.speak = speak;
-Cat.prototype.speak = speak;
+// 3 **********************************
 
-var firstDog = new Dog();
-firstDog.name = 'Molly';
-firstDog.breed = 'Pitbull';
-firstDog.speak('woof');
+// var speak = function(sayWhat) {
+//     console.log(sayWhat);
+// };
 
-var firstCat = new Dog();
-firstCat.name = 'Rue';
-firstCat.breed = 'Manx';
-firstCat.speak('meow');
+// var Dog = function() {
+//     var name, breed;
+// };
+
+// var Cat = function() {
+//     var name, breed;
+// };
+
+// Dog.prototype.speak = speak;
+// Cat.prototype.speak = speak;
+
+// var firstDog = new Dog();
+// firstDog.name = 'Molly';
+// firstDog.breed = 'Pitbull';
+// firstDog.speak('woof');
+
+// var firstCat = new Dog();
+// firstCat.name = 'Rue';
+// firstCat.breed = 'Manx';
+// firstCat.speak('meow');
 
 
-// 2 *****************
+// 2 **********************************
 
 // var Dog = function() {
 //     var name, breed;
@@ -44,7 +62,7 @@ firstCat.speak('meow');
 // secondDog.breed = 'Husky';
 
 
-// 1 *****************
+// 1 **********************************
 
 // var calc = {
 //   status : "Awesome",
