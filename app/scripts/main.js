@@ -1,13 +1,25 @@
 'use strict';
 
+// 8 **********************************
+
+var joe = (function(){
+
+  return {
+    speak : function() {
+      console.log('hello');
+    }
+  }
+  
+})();
+
 // 7 **********************************
 
-function myDog() {
-  var dogName = 'Fido';
-  console.log (dogName + ' says woof');    
-}
+// function myDog() {
+//   var dogName = 'Fido';
+//   console.log (dogName + ' says woof');    
+// }
 
-myDog();
+// myDog();
 
 
 // 6 **********************************
