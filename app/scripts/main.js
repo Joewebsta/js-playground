@@ -1,22 +1,38 @@
 'use strict';
 
+// 6 **********************************
+
+// 5 **********************************
+
+var plus = function() {
+    var sum = 0;
+    for (var i = arguments.length - 1; i >= 0; i--) {
+        sum += arguments[i];
+    };
+
+    return sum;
+}
+
+console.log(plus(2,2,2,5,6,3,5,7,7,8,9));
+
+
 // 4 **********************************
 
-var speak = function(sayWhat) {
-    console.log(sayWhat);
+// var speak = function(sayWhat) {
+//     console.log(sayWhat);
 
-    // console.log(this.normal);
-    // console.log(this.love);
+//     // console.log(this.normal);
+//     // console.log(this.love);
     
-};
+// };
 
-var saySomething = {
-    normal : 'meow',
-    love : 'purr'
-};
+// var saySomething = {
+//     normal : 'meow',
+//     love : 'purr'
+// };
 
-// speak.call(saySomething, saySomething.normal);
-speak.apply(saySomething, ['meoff']);
+// // speak.call(saySomething, saySomething.normal);
+// speak.apply(saySomething, ['meoff']);
 
 // 3 **********************************
 
