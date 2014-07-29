@@ -2,18 +2,27 @@
 
 // 6 **********************************
 
+// This is called a self excecuting function or
+// an anonymous closure.
+(function() {
+  console.log('foo');
+})();
+
+
+
+
 // 5 **********************************
 
-var plus = function() {
-    var sum = 0;
-    for (var i = arguments.length - 1; i >= 0; i--) {
-        sum += arguments[i];
-    };
+// var plus = function() {
+//     var sum = 0;
+//     for (var i = arguments.length - 1; i >= 0; i--) {
+//         sum += arguments[i];
+//     };
 
-    return sum;
-}
+//     return sum;
+// }
 
-console.log(plus(2,2,2,5,6,3,5,7,7,8,9));
+// console.log(plus(2,2,2,5,6,3,5,7,7,8,9));
 
 
 // 4 **********************************
