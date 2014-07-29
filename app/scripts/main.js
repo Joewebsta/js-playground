@@ -1,14 +1,22 @@
 'use strict';
 
+// 7 **********************************
+
+function myDog() {
+  var dogName = 'Fido';
+  console.log (dogName + ' says woof');    
+}
+
+myDog();
+
+
 // 6 **********************************
 
-// This is called a self excecuting function or
-// an anonymous closure.
-(function() {
-  console.log('foo');
-})();
-
-
+// // This is called a self excecuting function or
+// // an anonymous closure.
+// (function() {
+//   console.log('foo');
+// })();
 
 
 // 5 **********************************
