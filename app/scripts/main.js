@@ -4,12 +4,18 @@
 
 var joe = (function(){
 
+  var DEFAULTS = {
+    say : 'hello'
+  };  
+
   return {
     speak : function() {
-      console.log('hello');
+      var myArguments = arguments[0] || '';
+      var statement = myArguments.say || DEFAULTS.say;
+      console.log(statement);
     }
   }
-  
+
 })();
 
 // 7 **********************************
